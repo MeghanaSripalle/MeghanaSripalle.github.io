@@ -1,6 +1,6 @@
  const imageUpload = document.getElementById('imageUpload')
  //import * as canvas from 'canvas'
- console.log('error')
+ //console.log('error')
 
 Promise.all([
   faceapi.nets.faceRecognitionNet.loadFromUri('./models'),
@@ -46,7 +46,7 @@ function loadLabeledImages() {
     labels.map(async label => {
       const descriptions = []
       for (let i = 1; i <= 2; i++) {
-        const img = await faceapi.fetchImage(`https://github.com/MeghanaSripalle/Face_recognition/blob/master/labeled_images/${label}/${i}.jpg`) //upload photos on a github account
+        const img = await faceapi.fetchImage(`https://github.com/MeghanaSripalle/MeghanaSripalle.github.io/blob/master/labeled_images/${label}/${i}.jpg`) //upload photos on a github account
         //const canvas = require("canvas")
         //const { Canvas, Image, ImageData } = canvas
         //const img =  await canvas.loadImage('http://localhost/labeled_images/${label}/${i}.jpg')
